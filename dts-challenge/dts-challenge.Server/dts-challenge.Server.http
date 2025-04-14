@@ -1,0 +1,6 @@
+@dts_challenge.Server_HostAddress = http://localhost:5085
+
+GET {{dts_challenge.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
