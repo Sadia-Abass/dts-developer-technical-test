@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dts-challenge.Server", "dts
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "dts-challenge.client", "dts-challenge.client\dts-challenge.client.esproj", "{6A4FADC9-B436-46A0-9021-940E77D2F1C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dts-challenge-test", "dts-challenge-test\dts-challenge-test.csproj", "{6C1F6E49-5EA7-454B-8BC2-275E38941D07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{6A4FADC9-B436-46A0-9021-940E77D2F1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A4FADC9-B436-46A0-9021-940E77D2F1C6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6A4FADC9-B436-46A0-9021-940E77D2F1C6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6C1F6E49-5EA7-454B-8BC2-275E38941D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1F6E49-5EA7-454B-8BC2-275E38941D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1F6E49-5EA7-454B-8BC2-275E38941D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1F6E49-5EA7-454B-8BC2-275E38941D07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
