@@ -1,6 +1,6 @@
 ﻿namespace dts_challenge.Server.Entity
 {
-    public class Task
+    public class CaseworkTask
     {
         public long Id { get; set; }
         public string? title { get; set; }
