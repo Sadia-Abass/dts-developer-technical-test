@@ -19,8 +19,8 @@ namespace dts_challenge.Server.Repositories.Implementations
         {
            var task = new CaseworkTask
            {
-               title = taskDto.title,
-               description = taskDto.description,
+               title = taskDto.Title,
+               description = taskDto.Description,
                Stautus = taskDto.Status,
                DueDate = taskDto.DueDate,
                DueTime = taskDto.DueTime,
@@ -64,8 +64,8 @@ namespace dts_challenge.Server.Repositories.Implementations
                 return null;
             }
            
-            task.title = taskDto.title;
-            task.description = taskDto.description;
+            task.title = taskDto.Title;
+            task.description = taskDto.Description;
             task.Stautus = taskDto.Status;
             task.DueDate = taskDto.DueDate;
             task.DueTime = taskDto.DueTime;
