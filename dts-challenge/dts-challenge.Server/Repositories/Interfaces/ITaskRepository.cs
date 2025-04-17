@@ -1,4 +1,5 @@
-﻿using dts_challenge.Server.Entity;
+﻿using dts_challenge.Server.DTO;
+using dts_challenge.Server.Entity;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
 namespace dts_challenge.Server.Repositories.Interfaces
@@ -7,8 +8,8 @@ namespace dts_challenge.Server.Repositories.Interfaces
     {
         Task<List<CaseworkTask>> GellAllTaskAsync();
         Task<CaseworkTask?> GetByIdAsync(long id);
-        Task<CaseworkTask> CreateAsync(CaseworkTask task);
-        Task<CaseworkTask?> UpdateAsync(long id, CaseworkTask task);
+        Task<CaseworkTask> CreateAsync(CreateTaskDto taskDto);
+        Task<CaseworkTask?> UpdateAsync(long id, UpdateTaskDto taskDto);
         Task<CaseworkTask?> DeleteAsync(long id);
     }
 }
