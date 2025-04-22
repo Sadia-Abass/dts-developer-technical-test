@@ -5,15 +5,15 @@ namespace dts_challenge.Server.Mappers
 {
     public static class TaskMapper
     {
-        public static CreateTaskDto MapToCreateTaskDto(this CaseworkTask caseworkTask)
+        public static CaseworkTask MapToCreateTaskDto(this CreateTaskDto createTaskDto)
         {
-            return new CreateTaskDto
+            return new CaseworkTask
             {
-                Title = caseworkTask.title,
-                Description = caseworkTask.description,
-                Status = caseworkTask.Stautus,
-                DueDate = caseworkTask.DueDate,
-                DueTime = caseworkTask.DueTime
+                Title = createTaskDto.Title,
+                Description = createTaskDto.Description,
+                Status = createTaskDto.Status,
+                DueDate = createTaskDto.DueDate,
+                DueTime = createTaskDto.DueTime
             };
         }
 
@@ -21,9 +21,9 @@ namespace dts_challenge.Server.Mappers
         {
             return new TaskDetailDto 
             {
-                Title = caseworkTask.title,
-                Description = caseworkTask.description,
-                Status = caseworkTask.Stautus,
+                Title = caseworkTask.Title,
+                Description = caseworkTask.Description,
+                Status = caseworkTask.Status,
                 DueDate = caseworkTask.DueDate,
                 DueTime = caseworkTask.DueTime
             };
@@ -33,9 +33,9 @@ namespace dts_challenge.Server.Mappers
         {
             return new UpdateTaskDto
             {
-                Title = caseworkTask.title,
-                Description = caseworkTask.description,
-                Status = caseworkTask.Stautus,
+                Title = caseworkTask.Title,
+                Description = caseworkTask.Description,
+                Status = caseworkTask.Status,
                 DueDate = caseworkTask.DueDate,
                 DueTime = caseworkTask.DueTime
             };

@@ -15,15 +15,15 @@ namespace dts_challenge.Server.Repositories.Implementations
             _appDbContext = appDbContext ?? throw new ArgumentNullException(nameof(appDbContext));
         }
 
-        public async Task<CaseworkTask> CreateAsync(CreateTaskDto taskDto)
+        public async Task<CaseworkTask> CreateAsync(CaseworkTask caseworkTask)
         {
            var task = new CaseworkTask
            {
-               title = taskDto.Title,
-               description = taskDto.Description,
-               Stautus = taskDto.Status,
-               DueDate = taskDto.DueDate,
-               DueTime = taskDto.DueTime,
+               Title = caseworkTask.Title,
+               Description = caseworkTask.Description,
+               Status = caseworkTask.Status,
+               DueDate = caseworkTask.DueDate,
+               DueTime = caseworkTask.DueTime,
                CreatedDate = DateTime.UtcNow
            };
 
@@ -46,7 +46,7 @@ namespace dts_challenge.Server.Repositories.Implementations
 
         }
 
-        public async Task<List<CaseworkTask>> GellAllTaskAsync()
+        public async Task<List<CaseworkTask>> GetAllTaskAsync()
         {
             return await _appDbContext.CaseworkTasks.ToListAsync();
         }
@@ -64,9 +64,9 @@ namespace dts_challenge.Server.Repositories.Implementations
                 return null;
             }
            
-            task.title = taskDto.Title;
-            task.description = taskDto.Description;
-            task.Stautus = taskDto.Status;
+            task.Title = taskDto.Title;
+            task.Description = taskDto.Description;
+            task.Status = taskDto.Status;
             task.DueDate = taskDto.DueDate;
             task.DueTime = taskDto.DueTime;
             task.LastModifiedDate = DateTime.UtcNow;

@@ -6,9 +6,9 @@ namespace dts_challenge.Server.Repositories.Interfaces
 {
     public interface ITaskRepository
     {
-        Task<List<CaseworkTask>> GellAllTaskAsync();
+        Task<List<CaseworkTask>> GetAllTaskAsync();
         Task<CaseworkTask?> GetByIdAsync(long id);
-        Task<CaseworkTask> CreateAsync(CreateTaskDto taskDto);
+        Task<CaseworkTask> CreateAsync(CaseworkTask caseworkTask);
         Task<CaseworkTask?> UpdateAsync(long id, UpdateTaskDto taskDto);
         Task<CaseworkTask?> DeleteAsync(long id);
     }
