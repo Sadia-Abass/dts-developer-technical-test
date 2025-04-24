@@ -10,6 +10,6 @@ namespace dts_challenge.Server.Repositories.Interfaces
         Task<CaseworkTask?> GetByIdAsync(long id);
         Task<CaseworkTask> CreateAsync(CaseworkTask caseworkTask);
         Task<CaseworkTask?> UpdateAsync(long id, UpdateTaskDto taskDto);
-        Task<CaseworkTask?> DeleteAsync(long id);
+        Task<bool?> DeleteAsync(long id);
     }
 }

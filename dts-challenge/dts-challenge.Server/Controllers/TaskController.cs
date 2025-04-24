@@ -12,12 +12,12 @@ namespace dts_challenge.Server.Controllers
     [ApiController]
     public class TaskController : ControllerBase
     {
-        private readonly ApplicationDbContext _appDbContext;
+        //private readonly ApplicationDbContext _appDbContext;
         private readonly ITaskRepository _taskRepository;
 
-        public TaskController(ApplicationDbContext appDbContext, ITaskRepository taskRepository)
+        public TaskController(ITaskRepository taskRepository)
         {
-            _appDbContext = appDbContext ?? throw new ArgumentNullException(nameof(appDbContext));
+            //_appDbContext = appDbContext ?? throw new ArgumentNullException(nameof(appDbContext));
             _taskRepository = taskRepository ?? throw new ArgumentNullException(nameof(taskRepository));
         }
 
@@ -97,7 +97,7 @@ namespace dts_challenge.Server.Controllers
 
                 await _taskRepository.CreateAsync(entity);
 
-                return CreatedAtAction(nameof(GetById), new { id = entity.Id, entity });
+                return CreatedAtAction(nameof(GetById), new { id = entity.Id }, entity );
             }
             catch (Exception ex) 
             {

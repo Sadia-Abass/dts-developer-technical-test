@@ -32,7 +32,7 @@ namespace dts_challenge.Server.Repositories.Implementations
            return task;
         }
 
-        public async Task<CaseworkTask?> DeleteAsync(long id)
+        public async Task<bool?> DeleteAsync(long id)
         {
             var task = await _appDbContext.CaseworkTasks.FindAsync(id);
             if (task == null) 
@@ -42,7 +42,7 @@ namespace dts_challenge.Server.Repositories.Implementations
 
             _appDbContext.CaseworkTasks.Remove(task);
             await _appDbContext.SaveChangesAsync();
-            return task;
+            return true;
 
         }
 
