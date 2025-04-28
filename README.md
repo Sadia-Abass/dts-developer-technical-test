@@ -19,8 +19,15 @@
 **Testing**
 
 - xUnit
--FakeItEasy
--FluentAssertions
+- FakeItEasy
+- FluentAssertions
+
+## Configuration
+
+inside the appsettings.json file please modify the connection string based on your local SQL instance
+
+--file "ConnectionStrings": {
+  "DefaultConnection": "Server=(localdb)\\[name of db in instance];Database=dts;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;"
 
 ## Usage
 
@@ -31,7 +38,7 @@ cd dts-developer-technical-test/dts-challenge/dts-challenge.Server
 dotnet run
 ```
 
-To run the test
+To run the test:
 ```Terminal of choice
 cd dts-developer-technical-test/dts-challenge/dts-challenge-test
 dotnet test
