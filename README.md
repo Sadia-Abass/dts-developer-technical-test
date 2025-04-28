@@ -5,16 +5,15 @@
 
 **Client** 
 
--ReactJS
--Bootstrap
+- ReactJS
+- Bootstrap
+- node 22.13.1
 
 **Server** 
 
--ASP.NET Core Web Api
-
--.NET Core 8.0
-
--Entity Framework Core
+- ASP.NET Core Web Api
+- .NET Core 8.0
+- Entity Framework Core
 
 **Testing**
 -xUnit
