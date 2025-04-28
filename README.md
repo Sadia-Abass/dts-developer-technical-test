@@ -4,10 +4,12 @@
 ## Tech Stack
 
 **Client** 
--ReactJS, 
+
+-ReactJS
 -Bootstrap
 
 **Server** 
+
 -ASP.NET Core Web Api
 -.NET Core 8.0
 -Entity Framework Core
