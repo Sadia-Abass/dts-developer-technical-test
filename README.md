@@ -18,12 +18,16 @@
 -FluentAssertions
 
 ##Usage
+
 To start the project, run:
+
 ```Terminal of choice
 cd dts-developer-technical-test/dts-challenge/dts-challenge.Server
 dotnet run
+```
 
 To run the test
+```Terminal of choice
 cd dts-developer-technical-test/dts-challenge/dts-challenge-test
 dotnet test
 
