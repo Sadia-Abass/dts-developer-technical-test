@@ -12,8 +12,8 @@ namespace dts_challenge.Server.Mappers
                 Title = createTaskDto.Title,
                 Description = createTaskDto.Description,
                 Status = createTaskDto.Status,
-                DueDate = createTaskDto.DueDate,
-                DueTime = createTaskDto.DueTime
+                DueDate = DateOnly.Parse(createTaskDto.DueDate),
+                DueTime = TimeOnly.Parse(createTaskDto.DueTime)
             };
         }
 
@@ -21,11 +21,12 @@ namespace dts_challenge.Server.Mappers
         {
             return new TaskDetailDto 
             {
+                Id = caseworkTask.Id,
                 Title = caseworkTask.Title,
                 Description = caseworkTask.Description,
                 Status = caseworkTask.Status,
-                DueDate = caseworkTask.DueDate,
-                DueTime = caseworkTask.DueTime
+                DueDate = caseworkTask.DueDate.ToString(),
+                DueTime = caseworkTask.DueTime.ToString()
             };
         }
 
@@ -36,8 +37,8 @@ namespace dts_challenge.Server.Mappers
                 Title = caseworkTask.Title,
                 Description = caseworkTask.Description,
                 Status = caseworkTask.Status,
-                DueDate = caseworkTask.DueDate,
-                DueTime = caseworkTask.DueTime
+                DueDate = caseworkTask.DueDate.ToString(),
+                DueTime = caseworkTask.DueTime.ToString()
             };
         }
     }

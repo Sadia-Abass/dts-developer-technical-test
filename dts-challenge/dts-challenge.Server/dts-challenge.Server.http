@@ -4,3 +4,4 @@ GET {{dts_challenge.Server_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+GET {{dts_challenge.Server_HostAddress}}/api/task

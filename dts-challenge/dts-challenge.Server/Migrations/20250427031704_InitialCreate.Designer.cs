@@ -12,8 +12,8 @@ using dts_challenge.Server.Data;
 namespace dts_challenge.Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250422211129_DeleteColumn")]
-    partial class DeleteColumn
+    [Migration("20250427031704_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,17 +39,17 @@ namespace dts_challenge.Server.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DueDate")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly>("DueDate")
+                        .HasColumnType("date");
 
-                    b.Property<DateTime>("DueTime")
-                        .HasColumnType("datetime2");
+                    b.Property<TimeOnly>("DueTime")
+                        .HasColumnType("time");
 
                     b.Property<DateTime>("LastModifiedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Status")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<byte>("Status")
+                        .HasColumnType("tinyint");
 
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");

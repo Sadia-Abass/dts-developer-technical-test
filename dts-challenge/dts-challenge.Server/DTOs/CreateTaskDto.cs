@@ -9,10 +9,10 @@ namespace dts_challenge.Server.DTO
         public string? Title { get; set; }
         public string? Description { get; set; }
         [Required(ErrorMessage = "Please provide a status")]
-        public string? Status { get; set; }
+        public byte Status { get; set; } 
         [Required(ErrorMessage = "Please provide due date")]
-        public DateTime DueDate { get; set; }
+        public string DueDate { get; set; } = string.Empty;
         [Required(ErrorMessage = "Please provide a due time")]
-        public DateTime DueTime { get; set; }
+        public string DueTime { get; set; } = string.Empty;
     }
 }

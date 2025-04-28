@@ -17,6 +17,7 @@ namespace dts_challenge.Server.Repositories.Implementations
 
         public async Task<CaseworkTask> CreateAsync(CaseworkTask caseworkTask)
         {
+           
            var task = new CaseworkTask
            {
                Title = caseworkTask.Title,
@@ -67,8 +68,8 @@ namespace dts_challenge.Server.Repositories.Implementations
             task.Title = taskDto.Title;
             task.Description = taskDto.Description;
             task.Status = taskDto.Status;
-            task.DueDate = taskDto.DueDate;
-            task.DueTime = taskDto.DueTime;
+            task.DueDate = DateOnly.Parse(taskDto.DueDate);
+            task.DueTime = TimeOnly.Parse(taskDto.DueTime);
             task.LastModifiedDate = DateTime.UtcNow;
 
             await _appDbContext.SaveChangesAsync();
