@@ -26,8 +26,8 @@
 
 inside the appsettings.json file please modify the connection string based on your local SQL instance
 
---file "ConnectionStrings": {
-  "DefaultConnection": "Server=(localdb)\\{db instance};Database=dts;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;"
+"ConnectionStrings": {
+  "DefaultConnection": "Server={(localdb)\\db instance};Database=dts;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;"
 
 ## Usage
 
