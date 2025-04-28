@@ -14,6 +14,7 @@
 - ASP.NET Core Web Api
 - .NET Core 8.0
 - Entity Framework Core
+- Microsoft SQL Server
 
 **Testing**
 
@@ -23,7 +24,7 @@
 
 ## Usage
 
-To start the project, run:
+To run project locally:
 
 ```Terminal of choice
 cd dts-developer-technical-test/dts-challenge/dts-challenge.Server
