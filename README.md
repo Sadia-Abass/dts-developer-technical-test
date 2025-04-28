@@ -16,10 +16,9 @@
 - Entity Framework Core
 
 **Testing**
--xUnit
 
+- xUnit
 -FakeItEasy
-
 -FluentAssertions
 
 ## Usage
