@@ -25,7 +25,7 @@ This project is a coding task for the Junior Software Developer – Cross Cuttin
 
 ## Configuration
 
-inside the appsettings.json file please modify the connection string based on your local SQL instance
+please modify the connection string inside the path/to/appsettings.json file please modify the connection string based on your local SQL instance
 
 "ConnectionStrings": {
   "DefaultConnection": "Server={(localdb)\\db instance};Database=dts;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;"
