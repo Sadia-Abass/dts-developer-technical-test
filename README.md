@@ -2,6 +2,13 @@
 
 This project is a coding task for the Junior Software Developer – Cross Cutting application.
 
+## Table of Contents
+- [Tech Stack](#Tech Stack)
+- [Configuration](#Configuration)
+- [Usage](#usage)
+
+
+
 ## Tech Stack
 
 **Client** 
