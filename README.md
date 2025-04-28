@@ -1,5 +1,6 @@
 # dts-developer-technical-test
 
+This project is a coding task for the Junior Software Developer – Cross Cutting application.
 
 ## Tech Stack
 
